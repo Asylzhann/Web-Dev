@@ -1,76 +1,66 @@
 main {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  h2 {
-    color: #ff1493;
-    margin-bottom: 15px;
-  }
-  
-  p {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  label {
-    font-size: 1rem;
-    color: #444;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 8px;
-    border: 2px solid #ff69b4;
-    border-radius: 4px;
-    background-color: #ffd1dc;
-    color: #d63384;
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-  
-  button {
-    background-color: #ff1493;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #ff69b4;
-  }
-  
-  button svg {
-    fill: white;
-    margin-right: 5px;
-  }
-  
-  button span {
-    font-size: 1rem;
-  }
-  
-  a {
-    display: inline-block;
-    margin-top: 15px;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #ff1493;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }  
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+h2 {
+  color: #ff1493;
+  margin-bottom: 15px;
+}
+p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+label {
+  font-size: 1rem;
+  color: #444;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #ff69b4;
+  border-radius: 4px;
+  background-color: #ffd1dc;
+  color: #d63384;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+button {
+  background-color: #ff1493;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+button:hover {
+  background-color: #ff69b4;
+}
+button svg {
+  fill: white;
+  margin-right: 5px;
+}
+button span {
+  font-size: 1rem;
+}
+a {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff1493;
+}
+a:hover {
+  text-decoration: underline;
+}  

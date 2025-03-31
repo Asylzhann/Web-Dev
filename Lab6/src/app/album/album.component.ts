@@ -4,7 +4,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms'; 
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-album',
   standalone: true,
@@ -15,25 +14,19 @@ import { Router } from '@angular/router';
 export class AlbumComponent implements OnInit {
   albums: any[] = [];
   newAlbumTitle: string = '';
-
   private apiUrl = 'http://localhost:3000/albums'; 
-
   constructor(private http: HttpClient, private router: Router) {} 
-
   ngOnInit() {
     this.loadAlbums();
   }
-
   loadAlbums() {
     this.http.get<any[]>(this.apiUrl).subscribe({
       next: (data) => (this.albums = data),
       error: (err) => console.error('Error fetching albums:', err),
     });
   }
-
   addAlbum() {
     if (!this.newAlbumTitle.trim()) return;
-
     const newAlbum = { title: this.newAlbumTitle };
     this.http.post<any>(this.apiUrl, newAlbum).subscribe({
       next: (album) => {

@@ -1,6 +1,5 @@
 <main>
     <h2>Photos in Album {{ albumId }}</h2>
-  
     <div *ngIf="photos.length > 0; else noPhotos">
       <div class="photo-grid">
         <div *ngFor="let photo of photos" class="photo-item">
@@ -9,10 +8,7 @@
         </div>
       </div>
     </div>
-  
     <ng-template #noPhotos>
       <p>No photos found for this album.</p>
     </ng-template>
-
   </main>
-  
